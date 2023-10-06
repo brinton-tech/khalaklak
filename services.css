@@ -1,0 +1,188 @@
+.services{
+    height: 100vh;
+    background-color: wheat;
+    width: 100%;
+    padding: 30px;
+}
+@media screen and (max-width: 950px){
+    .services{
+        height: 100%;
+        padding: 30px 2px;
+    }
+}
+@media screen and (max-width: 285px) {
+    .services{
+        font-size: 16px;
+        pad: 10px 2px;
+    }
+ }
+.services-topbar{
+    width: 100%;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+}
+.services h4{
+    font-size: 29px;
+    font-family: cursive;
+    color: blueviolet;
+    font-style: italic;
+}
+@media screen and (max-width: 950px){
+    .services h4{
+        font-family: serif;
+        font-size: 25px;
+    }
+}
+@media screen and (min-width: 751px) and (max-width: 950px){
+    .services h4{
+        font-size: 35px;
+        font-style: italic;
+        font-family: serif;
+    }
+}
+@media screen and (max-height: 740px) and (max-width: 380px) {
+    .services h4{
+        font-size: 16px;
+    }
+ }
+ @media screen and (max-width: 285px) {
+    .services h4{
+        font-size: 15px;
+    }
+ }
+.services h6{
+    color: dimgray;
+    font-family: cursive;
+    font-style: oblique;
+    font-size: 18px;
+    word-spacing: 10px;
+}
+@media screen and (max-width: 950px){
+    .services h6{
+        font-family: serif;
+    }
+}
+@media screen and (max-height: 740px) and (max-width: 380px) {
+    .services h4{
+        font-size: 15px;
+    }
+ }
+ @media screen and (max-width: 285px) {
+    .services h6{
+        font-size: 12px;
+    }
+ }
+.services-lowerbar{
+    display: flex;
+    width: 100%;
+    height: 80%;
+    border: 1px solid rgb(241, 10, 10);
+    border-left:  1px solid transparent;
+    border-right:  1px solid transparent;
+    margin-top: 3%;
+    border-radius: 80px;
+    padding: 10px 30px;
+    flex-direction: row;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+}
+@media screen and (max-width: 950px){
+    .services-lowerbar{
+        flex-direction: column;
+        border: 0px solid transparent;
+        gap: 10px;
+        padding: 10px 40px;
+        padding: 0px;
+    }
+}
+@media screen and (max-height: 740px) and (max-width: 380px) {
+    .services-lowerbar{
+        padding: 5px;
+    }
+ }
+.myservices{
+    height: 90%;
+    width: 20%;
+    border-radius: 20px;
+    background-color: whitesmoke;
+    box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    flex-direction: column;
+}
+@media screen and (max-width: 950px){
+    .myservices{
+        width: 90%;
+        background-color: lightgray;
+        height: 100%;
+        padding: 20px 15px;
+    }
+}
+@media screen and (min-width: 751px) and (max-width: 950px){
+    .myservices{
+        padding: 25px 15px;
+    }
+}
+@media screen and (max-height: 740px) and (max-width: 380px) {
+    .myservices{
+        padding: 5px;
+    }
+ }
+.myservices p{
+    font-family: cursive;
+    color: blue;
+    font-style: italic;
+}
+@media screen and (max-width: 950px){
+    .myservices p{
+        font-family: serif;
+        font-style: italic;
+        margin-top: 10px;
+        color: white;
+    }
+}
+@media screen and (min-width: 751px) and (max-width: 950px){
+    .myservices p{
+        font-size: 23px;
+    }
+}
+@media screen and (max-height: 740px) and (max-width: 380px) {
+    .myservices p{
+        font-size: 14px;
+    }
+ }
+ @media screen and (max-width: 285px) {
+    .myservices p{
+        font-size: 12px;
+    }
+ }
+.myservices:hover{
+    background-color: lightgrey;
+    transition: 0.5s linear;
+    border: 1px solid red;
+}
+.myservices img{
+    height: 45px;
+}
+
+@media screen and (max-width: 950px){
+    .myservices img{
+        height: 30px;
+        margin-bottom: 5px;
+    }
+}
+@media screen and (min-width: 751px) and (max-width: 950px){
+    .myservices img{
+        height: 36px;
+    }
+}
+@media screen and (max-height: 740px) and (max-width: 380px) {
+    .myservices img{
+        height: 25px;
+    }
+ }

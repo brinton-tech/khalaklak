@@ -1,0 +1,380 @@
+::-webkit-scrollbar{
+    width: 10px;
+}
+::-webkit-scrollbar-track{
+    background-color: white;
+}
+::-webkit-scrollbar-thumb{
+    background-color: grey;
+    border-radius: 5px;
+    width: 8px;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.hero{
+    position: relative;
+    padding: 10px;
+    height: 100vh;
+    background-image: url(./images/laundryroom.jpg);
+    background-size: cover;
+    background-position: cover center;
+    
+}
+
+/* /* @media screen and (max-width: 950px){
+    .hero{
+        width: 90%;
+    } */
+ 
+.topbar{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 40px;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    height: 50px;
+}
+@media screen and (max-width: 950px) {
+    .topbar{
+        height: 100vh;
+        justify-content: center;
+        width: 70%;
+        bottom: 0;
+        z-index: 999;
+        background-color: grey;
+        position: fixed;
+        display: none;
+    }
+}@media screen and (max-width: 950px){
+    .links{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 20%;
+    }
+}
+
+.links ul{
+    display: flex;
+    list-style: none;
+    gap: 30px;
+    align-items: center;
+}
+.badge, .badg{
+    text-align: center;
+    font-family: cursive;
+    border-radius: 70% 30% 80% 50%;
+    background-color: aqua;
+    color: white;
+    height: 60px;
+    width: 90px;
+    cursor: pointer;
+}
+.badg{
+    height: 50px;
+    width: 70px;
+}
+.badge h4{
+    font-size: 19px;
+}
+.laundry{
+    color: rgb(243, 5, 44);
+}
+@media screen and (min-width: 751px) and (max-width: 950px) {
+    .laundry{
+        font-size: 30px;
+    }
+    .badg{
+        height: 90px;
+        width: 120px;
+    }
+}
+@media screen and (max-width: 285px) {
+    .laundry{
+        font-size: 12px;
+    }
+ }
+@media screen and (max-width: 950px) {
+    .links ul{
+        flex-direction: column;
+        gap: 35px;
+    }
+    .badge{
+        display: none;
+    }
+}
+.links ul li{
+    font-family: cursive;
+    font-weight: 150;
+    font-size: 18px;
+    position: relative;
+    display: flex;align-items: center;
+   
+}
+@media screen and (max-width: 950px) {
+    .links ul li{
+        display: flex;
+        flex-direction: column;
+        font-family: serif;
+    }
+}
+.links ul li a{
+    text-decoration: none;
+    color: rgb(245, 142, 8);
+    text-align: justify;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+@media screen and (max-width:950px) {
+    .links ul li a{
+        color: white;
+        font-size:24px;
+  
+        }
+
+    }
+.links ul li a::after{
+    content: "";
+    position: absolute;
+    width: calc(0%);
+    height: 2px;
+    background-color: rgb(243, 9, 48);
+    right: 0px;
+    bottom: -2px;
+    border-radius: 12px;
+}
+.links ul li a:hover::after{
+    width: 80%;
+    transition: 0.5s linear;
+}
+.hero .topbar .links ul li a.active{
+    font-size: 19px;
+    font-weight: 900;
+    color: rgb(32, 148, 226);
+    text-align: center;
+}
+@media screen and (max-width: 950px) {
+    .hero .topbar .links ul li a.active{
+        font-size: 26px;
+        font-family: serif;
+    } 
+}
+.links img{
+    height: 25px;
+    margin-right: 3px;
+}
+.home{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 50px);
+    flex-direction: column;
+}
+.statement{
+    padding: 10px 5px;
+}
+.statement h4{
+   font-size: 28px;
+   text-align: center;
+   font-family: cursive;
+   font-weight: 100;
+   font-style: italic;
+   color: white;
+   letter-spacing: 5px;
+}
+
+.waar{
+    letter-spacing: 19px;
+    word-spacing: 70px;
+    color: blueviolet;
+    font-size: 58px;
+    font-weight: 900;
+}
+
+.statement h6{
+    color: rgb(46, 29, 1);
+    font-family: cursive;
+    font-size: 27px;
+    text-align: center;
+    margin-top: 10px;
+    font-weight: 100;
+    word-spacing: 10px;
+}
+
+.mybtn{
+    margin-top: 50px;
+    background-color: transparent;
+    border: 1px solid whitesmoke;
+    font-family: cursive;
+    border-radius: 18px;
+    cursor: pointer;
+    color: rgb(247, 5, 5);
+    font-weight: 900;
+    display: flex;
+    align-items: center;
+    position: relative;
+    gap: 3px;
+    overflow: hidden;
+    z-index: 600;
+    text-align: center;
+    padding: 4px 10px;
+    background-color: white;
+}
+.mybtn img{
+    height: 30px;
+    transform: rotate(180deg);
+}
+.inner{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: brown;
+    opacity: 0.6;
+}
+.hey{
+    color: rgb(238, 214, 3);
+    font-size: 35px;
+    margin-bottom: 10px;
+}
+@media screen and (min-width: 751px) and (max-width: 950px){
+    .waar{
+        font-size: 89px;
+        font-family: serif;
+        font-style: italic;
+        word-spacing: 75px;
+    }
+    .statement h6{
+        color: burlywood;
+        font-size: 35px;
+    }
+    .statement h4{
+        font-size: 44px;
+        font-family: serif;
+    }
+    .hey{
+        margin-top: 15%;
+        font-size: 40px;
+    }
+    .mybtn{
+        margin-top: 32%;
+        font-size: 28px;  
+        padding: 8px 15px;      
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .waar{
+        word-spacing: 50px;
+        color: blueviolet;
+        font-size: 58px;
+        font-weight: 900;
+        margin-bottom: 30px;
+    }
+    .statement h6{
+        color: rgb(46, 29, 1);
+        color: burlywood;
+        font-family: serif;
+        font-size: 21px;
+        text-align: center;
+        margin-top: 23%;
+        font-weight: 400;
+        word-spacing: 6px;
+        white-space: wrap;
+        font-style: italic;
+    }
+    .statement h4{
+        font-size: 28px;
+        text-align: center;
+        font-family: cursive;
+        font-family: serif;
+        font-weight: 400;
+        font-style: italic;
+        color: whitesmoke;
+        letter-spacing: 5px;
+        margin-top: 5%;
+     }
+     .mybtn{
+        margin-top: 24%;
+     }
+}
+@media screen and (max-width: 285px) {
+    .waar{
+        font-size: 35px;
+    }
+ }
+.icon{
+    color:#fcfc
+}
+
+ .links .left {
+    height: 50px;
+ }  
+
+ @media screen and (min-width: 950px) {
+    .links .left {
+        display: none;
+     } 
+ }
+ .phonebar{
+    top: 0;
+    width: 100%;
+    left: 0;
+    right: 0;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 10px;
+    align-items: center;
+    z-index: 999;
+ }
+ @media screen and (max-width: 285px) {
+    .phonebar{
+        justify-content: space-around;
+    }
+ }
+ .phonebar img{
+    height: 40px;
+ }
+ @media screen and (max-width: 950px) {
+    .phonebar img{
+        height: 55px;
+    }
+ }
+ @media screen and (max-width: 750px) {
+    .phonebar img{
+        height: 40px;
+    }
+ }
+ @media screen and (max-width: 285px) {
+    .phonebar img{
+        height: 30px;
+    }
+ }
+ @media screen and (min-width: 950px) {
+    .phonebar{
+        display: none;
+    }
+ }
+ .footer{
+    width: 100%;
+    background-color: cadetblue;
+    text-align: center;
+    font-size: 22px;
+    color: whitesmoke;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-style: italic;
+    font-family: cursive;
+ }

@@ -1,0 +1,355 @@
+.contancts{
+    height: 100vh;
+    background-color: lightgrey;
+}
+@media screen and (max-width: 950px) {
+    .contancts{
+        height: 100%;
+        padding: 20px 5px;
+    }
+}
+@media screen and (min-width: 751px) and (max-width: 950px){
+    .contancts{
+        height: 105vh;
+        padding: 30px 5px;
+    }
+}
+.contancts-topbar{
+    width: 100%;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+}
+@media screen and (max-width: 950px){
+    .contancts-topbar{
+        font-family: serif;
+        margin-bottom: 20px;
+    }
+}
+@media screen and (min-width: 751px) and (max-width: 950px){
+    .contancts-topbar{
+        margin-bottom: 0px;
+    }
+}
+.contancts h4{
+    font-size: 29px;
+    font-family: cursive;
+    color: blueviolet;
+    font-style: italic;
+}
+@media screen and (max-width: 950px) {
+    .contancts h4{
+        font-size: 24px;
+        font-family: serif;
+    }
+}
+@media screen and (max-height: 740px) and (max-width: 380px) {
+    .contancts h4{
+        font-size: 18px;
+    }
+ }
+.contancts h6{
+    color: dimgray;
+    font-family: cursive;
+    font-style: oblique;
+    font-size: 18px;
+    word-spacing: 10px;
+}
+@media screen and (max-width: 950px) {
+    .contancts h6{
+        font-size: 12px;
+        font-family: serif;
+    }
+}
+.contancts-lowerbar{
+    width: 100%;
+    height: 85%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    position: relative;
+}
+@media screen and (min-width: 751px) and (max-width: 950px){
+    .contancts-lowerbar{
+        gap: 40px;
+    }
+}
+@media screen and (max-width: 950px) {
+    .contancts-lowerbar{
+        flex-direction: column-reverse;
+    }
+}
+@media screen and (max-width: 285px) {
+    .contancts-lowerbar{
+        gap: 10px;
+    }
+ }
+.social-handles{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: rgb(1, 21, 31);
+    color: white;
+    padding: 20px 20px;
+    width: 400px;
+}
+@media screen and (max-width: 950px) {
+    .social-handles{
+        width: 330px;
+        margin-top: 10px;
+    }
+}
+@media screen and (min-width: 751px) and (max-width: 950px){
+    .social-handles{
+        width: 600px;
+    }
+}
+@media screen and (max-width: 285px) {
+    .social-handles{
+        width: 290px;
+        pad: 5px 15px;
+    }
+ }
+@media screen and (max-width: 285px) {
+    .social-handles{
+        margin-top: 5px;
+    }
+ }
+.social-handles img{
+    height: 25px;
+}
+@media screen and (max-width: 285px) {
+    .social-handles img{
+        height: 15px;
+    }
+ }
+.social-handles li{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-family: cursive;
+    cursor: pointer;
+}
+@media screen and (max-width: 950px) {
+    .social-handles li{
+        font-size: 10px;
+        font-family: serif;
+    }
+}
+@media screen and (max-width: 285px) {
+    .social-handles li{
+        font-size: 8px;
+    }
+ }
+.social-handles h6{
+    color: whitesmoke;
+    font-weight: bold;
+}
+@media screen and (max-width: 950px) {
+    .social-handles h6{
+        font-size: 12px;
+        font-family: serif;
+    }
+}
+@media screen and (max-width: 285px) {
+    .social-handles h6{
+        font-size: 7px;
+    }
+ }
+.social-handles div{
+    display: flex;
+    gap: 5px;
+    margin-top: 10px;
+    width: inherit;
+    align-items: center;
+    margin-top: 20px;
+}@media screen and (max-width: 285px) {
+    .social-handles div{
+        margin-top: 10px;
+    }
+ }
+
+.social-handles div img{
+    cursor: pointer;
+    height: 20px;
+}
+@media screen and (max-width: 285px) {
+    .social-handles div img{
+        height: 14px;
+    }
+ }
+.myform{
+    display: flex;
+    width: 600px;
+    flex-direction: column;
+    gap: 20px;
+    padding: 30px 20px;
+    background-color: aliceblue;
+    border-radius: 15px;
+}
+
+@media screen and (max-width: 950px) {
+    .myform{
+        width: 100%;
+        padding: 10px;
+    }
+}
+@media screen and (min-width: 751px) and (max-width: 950px){
+    .myform{
+        width: 600px;
+    }
+}
+@media screen and (max-width: 285px) {
+    .myform{
+        width: 295px;
+    }
+ }
+.myform h6{
+    color: blue;
+    word-spacing: 1px;
+}
+@media screen and (max-width: 950px) {
+    .myform h6{
+        font-size: 12px;
+    }
+}
+@media screen and (max-width: 285px) {
+    .myform h6{
+        font-size: 10px;
+    }
+ }
+.myform input{
+    width: 250px;
+    height: 30px;
+    border-radius: 3px;
+    outline: none;
+    font-family: cursive;
+    border: 2px solid grey;
+    background-color: transparent;
+    padding: 3px;
+}
+@media screen and (max-width: 950px) {
+    .myform input{
+        width: 150px;
+    }
+}
+@media screen and (min-width: 751px) and (max-width: 950px){
+    .myform input{
+        width: 255px;
+        height: 35px;
+    }
+}
+@media screen and (max-width: 285px) {
+    .myform input{
+        height: 20px;
+        width: 120px;
+    }
+ }
+.myform input::placeholder{
+    font-style: normal;
+}
+.textarea{
+    resize: none;
+    width: 505px;
+    height: 200px;
+    font-family: serif;
+    border: 2px solid grey;
+    outline: none;
+    font-family: cursive;
+    align-items: center;
+    background-color: transparent;
+    padding: 5px;
+}
+@media screen and (max-width: 950px) {
+    .textarea{
+        width: 300px;
+        height: 100px;
+    }
+}
+@media screen and (min-width: 751px) and (max-width: 950px){
+    .textarea{
+        width: 520px;
+        height: 200px;
+    }
+}
+@media screen and (max-height: 740px) and (max-width: 380px) {
+    .textarea{
+        height: 90px;
+        width: 250px;
+    }
+ }
+ @media screen and (max-width: 285px) {
+    .textarea{
+        height: 75px;
+    }
+ }
+.send{
+    width: 100px;
+    color: white;
+    background-color: darkturquoise;
+    border: 1px solid darkturquoise;
+    font-family: cursive;
+    border-radius: 10px;
+    height: 30px;
+    font-weight: bold;
+    font-style: italic;
+}
+@media screen and (max-width: 950px) {
+    .send{
+        height: 18px;
+        font-family: serif;
+    }
+}
+.mymap{
+    width: 90%;
+    border-radius:5px;
+    height: 220px;
+}
+.first{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+@media screen and (max-width: 950px) {
+    .first{
+        gap: 10px;
+    }
+}
+@media screen and (max-width: 950px) {
+    .mymap{
+        width: 360px;
+        height: 247px;
+    }
+}
+@media screen and (min-width: 751px) and (max-width: 950px){
+    .mymap{
+        width: 600px;
+    }
+}
+@media screen and (max-height: 740px) and (max-width: 380px) {
+    .mymap{
+        height: 140px;
+        width: 90%;
+    }
+ }
+ @media screen and (max-width: 285px) {
+    .abt-header h4{
+        height: 110px;
+    }
+ }
+.second{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+@media screen and (min-width: 751px) and (max-width: 950px){
+    .second{
+        gap: 30px;
+    }
+}
+.contanct-div{
+    display: flex;
+    gap: 5px;
+}

@@ -1,0 +1,205 @@
+.testimonials{
+    background-color: rgb(177, 174, 174);
+    height: 100vh;
+    padding: 20px 8px;
+}
+
+.testimonial-section{
+    display: flex;
+    gap: 7px;
+    position: relative;
+}
+@media screen and (max-width: 950px){
+    .testimonial-section{
+        flex-direction: column;
+        padding: 20px 20px;
+    }
+}
+.testimonials-top{
+    text-align: center;
+    padding: 40px 10px 5px;
+}
+@media screen and (max-width: 950px){
+    .testimonials-top{
+        flex-direction: column;
+        padding: 10px 5px;
+    }
+}
+@media screen and (max-height: 740px) and (max-width: 380px) {
+    .testimonials-top{
+        padding: 5px;
+    }
+ }
+.testimonials h4{
+    font-size: 31px;
+    font-family: cursive;
+    color: blueviolet;
+    font-style: italic;
+}
+@media screen and (max-width: 950px){
+    .testimonials h4{
+        font-size: 26px;
+        font-family: serif;
+    }
+}
+@media screen and (max-width: 285px) {
+    .testimonials h4{
+        font-size: 15px;
+    }
+ }
+.testimonials h6{
+    color: dimgray;
+    font-family: cursive;
+    font-style: oblique;
+    font-size: 18px;
+    word-spacing: 10px;
+    margin-bottom: 40px;
+}
+@media screen and (max-width: 950px){
+    .testimonials h6{
+        margin-bottom: 10px;
+        font-family: serif;
+    }
+}
+@media screen and (max-height: 740px) and (max-width: 380px) {
+    .testimonials h6{
+        margin-top: 4px;
+        font-size: 16px;
+    }
+ }
+ @media screen and (max-width: 285px) {
+    .testimonials h6{
+        font-size: 12px;
+    }
+ }
+.ts{
+    box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+    background-color: white;
+    border-radius: 10px;
+    padding: 40px 10px;
+    font-family: cursive;
+    text-align: center;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+@media screen and (max-width: 950px){
+    .ts{
+        height: 234px;
+        color: grey;
+        font-style: italic;
+    }
+}
+@media screen and (min-width: 751px) and (max-width: 950px){
+    .ts{
+        height: 285px;
+    }
+}
+@media screen and (max-height: 740px) and (max-width: 380px) {
+    .ts{
+        height: 205px;
+    }
+ }
+ @media screen and (max-width: 285px), (max-height: 670px){
+    .ts{
+        height: 180px;
+    }
+ }
+.ts:hover{
+    background-color: aliceblue;
+    transition: 1s ease;
+    transform: translateX(-4px);
+}
+.ts img {
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    border: 1px solid rgb(235, 11, 123);
+}
+@media screen and (max-width: 950px){
+    .ts img{
+        height: 40px;
+        width: 40px;
+    }
+}
+@media screen and (max-height: 740px) and (max-width: 380px) {
+    .ts img{
+        height: 30px;
+    }
+ }
+ @media screen and (max-width: 950px){
+    .ts p{
+        font-family: serif;
+    }
+}
+ @media screen and (max-height: 740px) and (max-width: 380px) {
+    .ts p{
+        font-size: 13px;
+    }
+ }
+ @media screen and (max-width: 285px) {
+    .ts p{
+        font-size: 10px;
+    }
+ }
+.ts h6{
+    color: rgb(11, 164, 235);
+    margin-top: 10px;
+    cursor: pointer;
+    font-family: serif;
+}
+
+@media screen and (max-height: 740px) and (max-width: 380px) {
+    .ts h6{
+        margin-top: 4px;
+    }
+ }
+ @media screen and (max-width: 285px) {
+    .ts h6{
+        font-size: 12px;
+    }
+ }
+ @media screen and (max-width: 950px){
+    .ts h6{
+        font-family: serif;
+    }
+}
+
+
+
+    #loading-animation {
+      width: 100%;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: fixed;
+      top: 0;
+      left: 0;
+      background-color: #fff;
+      z-index: 9999;
+      transition: opacity 0.5s;
+    }
+    
+    #loading-animation.hide {
+      opacity: 0;
+      pointer-events: none;
+    }
+    
+    #loading-animation .loader {
+      border: 8px solid #f3f3f3;
+      border-top: 8px solid #3498db;
+      border-radius: 50%;
+      width: 60px;
+      height: 60px;
+      animation: spin 1s linear infinite;
+    }
+    
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
